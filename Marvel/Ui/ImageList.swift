@@ -14,9 +14,7 @@ struct ImageList: View {
     
     var body: some View {
         VStack{
-            
-            // 버튼영역
-            ScrollView(.horizontal, showsIndicators: false){
+            ScrollView(.vertical, showsIndicators: false){
                 HStack{
                     ForEach(0..<buttons.count){ button_count in
                         TopButton(title: buttons[button_count], buttonCount: button_count, buttonSelected: $buttonSelected)
