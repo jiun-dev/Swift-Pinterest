@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		B997EF5126933A0E00FEEF32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997EF5026933A0E00FEEF32 /* ContentView.swift */; };
 		B997EF5326933A0F00FEEF32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B997EF5226933A0F00FEEF32 /* Assets.xcassets */; };
 		B997EF5626933A0F00FEEF32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B997EF5526933A0F00FEEF32 /* Preview Assets.xcassets */; };
+		B997EF5F2693402D00FEEF32 /* ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997EF5E2693402D00FEEF32 /* ImageList.swift */; };
+		B997EF622693412900FEEF32 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = B997EF612693412900FEEF32 /* WaterfallGrid */; };
+		B997EF642693448C00FEEF32 /* TopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997EF632693448C00FEEF32 /* TopButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		B997EF5226933A0F00FEEF32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B997EF5526933A0F00FEEF32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B997EF5726933A0F00FEEF32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B997EF5E2693402D00FEEF32 /* ImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageList.swift; sourceTree = "<group>"; };
+		B997EF632693448C00FEEF32 /* TopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B997EF622693412900FEEF32 /* WaterfallGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +58,7 @@
 		B997EF4D26933A0E00FEEF32 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				B997EF5D2693401500FEEF32 /* Ui */,
 				B997EF4E26933A0E00FEEF32 /* MarvelApp.swift */,
 				B997EF5026933A0E00FEEF32 /* ContentView.swift */,
 				B997EF5226933A0F00FEEF32 /* Assets.xcassets */,
@@ -67,6 +74,15 @@
 				B997EF5526933A0F00FEEF32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B997EF5D2693401500FEEF32 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				B997EF5E2693402D00FEEF32 /* ImageList.swift */,
+				B997EF632693448C00FEEF32 /* TopButton.swift */,
+			);
+			path = Ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +101,9 @@
 			dependencies = (
 			);
 			name = Marvel;
+			packageProductDependencies = (
+				B997EF612693412900FEEF32 /* WaterfallGrid */,
+			);
 			productName = Marvel;
 			productReference = B997EF4B26933A0E00FEEF32 /* Marvel.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +131,9 @@
 				Base,
 			);
 			mainGroup = B997EF4226933A0E00FEEF32;
+			packageReferences = (
+				B997EF602693412900FEEF32 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+			);
 			productRefGroup = B997EF4C26933A0E00FEEF32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B997EF5F2693402D00FEEF32 /* ImageList.swift in Sources */,
+				B997EF642693448C00FEEF32 /* TopButton.swift in Sources */,
 				B997EF5126933A0E00FEEF32 /* ContentView.swift in Sources */,
 				B997EF4F26933A0E00FEEF32 /* MarvelApp.swift in Sources */,
 			);
@@ -326,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B997EF602693412900FEEF32 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B997EF612693412900FEEF32 /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B997EF602693412900FEEF32 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B997EF4326933A0E00FEEF32 /* Project object */;
 }
