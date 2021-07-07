@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9556A102695DC4900222BBC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B9556A0F2695DC4900222BBC /* Alamofire */; };
 		B980A4A82695C9BA005FC5FC /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A4A72695C9BA005FC5FC /* CatModel.swift */; };
 		B980A4AB2695CA53005FC5FC /* CatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A4AA2695CA53005FC5FC /* CatController.swift */; };
 		B997EF4F26933A0E00FEEF32 /* MarvelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997EF4E26933A0E00FEEF32 /* MarvelApp.swift */; };
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B997EF622693412900FEEF32 /* WaterfallGrid in Frameworks */,
+				B9556A102695DC4900222BBC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +127,7 @@
 			name = Marvel;
 			packageProductDependencies = (
 				B997EF612693412900FEEF32 /* WaterfallGrid */,
+				B9556A0F2695DC4900222BBC /* Alamofire */,
 			);
 			productName = Marvel;
 			productReference = B997EF4B26933A0E00FEEF32 /* Marvel.app */;
@@ -155,6 +158,7 @@
 			mainGroup = B997EF4226933A0E00FEEF32;
 			packageReferences = (
 				B997EF602693412900FEEF32 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				B9556A0E2695DC4900222BBC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B997EF4C26933A0E00FEEF32 /* Products */;
 			projectDirPath = "";
@@ -376,6 +380,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B9556A0E2695DC4900222BBC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
 		B997EF602693412900FEEF32 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
@@ -387,6 +399,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B9556A0F2695DC4900222BBC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9556A0E2695DC4900222BBC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		B997EF612693412900FEEF32 /* WaterfallGrid */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B997EF602693412900FEEF32 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
