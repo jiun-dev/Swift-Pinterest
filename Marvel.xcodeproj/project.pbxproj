@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B980A4A82695C9BA005FC5FC /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A4A72695C9BA005FC5FC /* CatModel.swift */; };
+		B980A4AB2695CA53005FC5FC /* CatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A4AA2695CA53005FC5FC /* CatController.swift */; };
 		B997EF4F26933A0E00FEEF32 /* MarvelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997EF4E26933A0E00FEEF32 /* MarvelApp.swift */; };
 		B997EF5126933A0E00FEEF32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997EF5026933A0E00FEEF32 /* ContentView.swift */; };
 		B997EF5326933A0F00FEEF32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B997EF5226933A0F00FEEF32 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B980A4A72695C9BA005FC5FC /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
+		B980A4AA2695CA53005FC5FC /* CatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatController.swift; sourceTree = "<group>"; };
 		B997EF4B26933A0E00FEEF32 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B997EF4E26933A0E00FEEF32 /* MarvelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelApp.swift; sourceTree = "<group>"; };
 		B997EF5026933A0E00FEEF32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B980A4A62695C9A7005FC5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B980A4A72695C9BA005FC5FC /* CatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B980A4A92695CA43005FC5FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B980A4AA2695CA53005FC5FC /* CatController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B997EF4226933A0E00FEEF32 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +78,8 @@
 		B997EF4D26933A0E00FEEF32 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				B980A4A92695CA43005FC5FC /* Controller */,
+				B980A4A62695C9A7005FC5FC /* Model */,
 				B997EF5D2693401500FEEF32 /* Ui */,
 				B997EF4E26933A0E00FEEF32 /* MarvelApp.swift */,
 				B997EF5026933A0E00FEEF32 /* ContentView.swift */,
@@ -163,6 +185,8 @@
 				B997EF5F2693402D00FEEF32 /* ImageList.swift in Sources */,
 				B997EF642693448C00FEEF32 /* TopButton.swift in Sources */,
 				B997EF5126933A0E00FEEF32 /* ContentView.swift in Sources */,
+				B980A4A82695C9BA005FC5FC /* CatModel.swift in Sources */,
+				B980A4AB2695CA53005FC5FC /* CatController.swift in Sources */,
 				B997EF4F26933A0E00FEEF32 /* MarvelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

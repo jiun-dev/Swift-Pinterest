@@ -11,7 +11,8 @@ import WaterfallGrid
 struct ImageList: View {
     @State var buttonSelected = 0
     let buttons = ["one", "two", "three", "four"]
-    
+    @State private var cats = [CatModel]()
+
     var body: some View {
         VStack{
             ScrollView(.vertical, showsIndicators: false){
@@ -21,6 +22,7 @@ struct ImageList: View {
                         
                     }
                 }
+
                 WaterfallGrid((1...14), id:\.self){index in
                     Image("image_\(index)")
                         .resizable()
@@ -29,7 +31,9 @@ struct ImageList: View {
                 }.gridStyle(columns: 2).padding()
                 
             }
-        }.padding(.horizontal)
+        }.padding(.horizontal).onAppear(perform: {
+            requestGet(url: "https://dog.ceo/api/breeds/image/random/10", completionHandler: <#T##(String, Any) -> Void#>)
+        })
         
     }
 }
